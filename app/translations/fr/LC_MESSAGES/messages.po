@@ -1,0 +1,339 @@
+# French translations for Pulatov Blog.
+# Copyright (C) 2026 Pulatov Blog
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pulatov_microblog\n"
+"Report-Msgid-Bugs-To: admin@pulatov-blog.example.com\n"
+"POT-Creation-Date: 2026-05-14 23:10+0500\n"
+"PO-Revision-Date: 2026-05-14 23:10+0500\n"
+"Last-Translator: Pulatov Blog Team\n"
+"Language: fr\n"
+"Language-Team: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app/__init__.py:20
+msgid "Please log in to access this page."
+msgstr "Veuillez vous connecter pour accéder à cette page."
+
+#: app/forms.py:11 app/forms.py:18 app/forms.py:39
+msgid "Username"
+msgstr "Identifiant"
+
+#: app/forms.py:12 app/forms.py:20
+msgid "Password"
+msgstr "Mot de passe"
+
+#: app/forms.py:13
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: app/forms.py:14 app/routes.py:86 app/templates/login.html:6
+msgid "Sign In"
+msgstr "Connexion"
+
+#: app/forms.py:19 app/forms.py:66
+msgid "Email"
+msgstr "Adresse e-mail"
+
+#: app/forms.py:21 app/forms.py:72
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+#: app/forms.py:23 app/templates/register.html:6
+msgid "Create Account"
+msgstr "Créer un compte"
+
+#: app/forms.py:29 app/forms.py:52
+msgid "That username is already taken."
+msgstr "Cet identifiant est déjà pris."
+
+#: app/forms.py:35
+msgid "That email address is already registered."
+msgstr "Cette adresse e-mail est déjà utilisée."
+
+#: app/forms.py:40
+msgid "About Me"
+msgstr "À propos de moi"
+
+#: app/forms.py:41
+msgid "Save Changes"
+msgstr "Enregistrer"
+
+#: app/forms.py:56
+msgid "Submit"
+msgstr "Valider"
+
+#: app/forms.py:60
+msgid "Say something"
+msgstr "Exprimez-vous"
+
+#: app/forms.py:62
+msgid "Post"
+msgstr "Publier"
+
+#: app/forms.py:67
+msgid "Send Reset Link"
+msgstr "Envoyer le lien"
+
+#: app/forms.py:71
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: app/forms.py:74 app/routes.py:208
+msgid "Reset Password"
+msgstr "Réinitialiser le mot de passe"
+
+#: app/routes.py:38
+msgid "Your post is now live!"
+msgstr "Votre message a été publié !"
+
+#: app/routes.py:49 app/templates/base.html:35
+msgid "Home"
+msgstr "Accueil"
+
+#: app/routes.py:66 app/templates/base.html:40 app/templates/index.html:30
+msgid "Discover"
+msgstr "Découvrir"
+
+#: app/routes.py:79
+msgid "Invalid username or password"
+msgstr "Identifiant ou mot de passe incorrect"
+
+#: app/routes.py:105
+msgid "Welcome! Your account has been created."
+msgstr "Bienvenue ! Votre compte a été créé."
+
+#: app/routes.py:107 app/templates/base.html:53
+msgid "Register"
+msgstr "Inscription"
+
+#: app/routes.py:136
+msgid "Your changes have been saved."
+msgstr "Vos modifications ont été enregistrées."
+
+#: app/routes.py:141 app/templates/edit_profile.html:6
+#: app/templates/user.html:30
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+#: app/routes.py:152 app/routes.py:173
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Utilisateur %(username)s introuvable."
+
+#: app/routes.py:155
+msgid "You cannot follow yourself!"
+msgstr "Vous ne pouvez pas vous abonner à vous-même !"
+
+#: app/routes.py:159
+#, python-format
+msgid "You are now following %(username)s!"
+msgstr "Vous suivez maintenant %(username)s !"
+
+#: app/routes.py:176
+msgid "You cannot unfollow yourself!"
+msgstr "Vous ne pouvez pas vous désabonner de vous-même !"
+
+#: app/routes.py:180
+#, python-format
+msgid "You have unfollowed %(username)s."
+msgstr "Vous ne suivez plus %(username)s."
+
+#: app/routes.py:205
+msgid "Check your email for password reset instructions."
+msgstr "Vérifiez votre e-mail pour les instructions de réinitialisation."
+
+#: app/routes.py:222
+msgid "Your password has been reset successfully."
+msgstr "Votre mot de passe a été réinitialisé avec succès."
+
+#: app/translate.py:8
+msgid "Error: the translation service is not configured."
+msgstr "Erreur : le service de traduction n'est pas configuré."
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr "Erreur : le service de traduction a échoué."
+
+#: app/templates/404.html:6
+msgid "Page Not Found"
+msgstr "Page introuvable"
+
+#: app/templates/404.html:8
+msgid "The page you're looking for doesn't exist or has been moved."
+msgstr "La page que vous cherchez n'existe pas ou a été déplacée."
+
+#: app/templates/404.html:11 app/templates/500.html:11
+msgid "Back to Home"
+msgstr "Retour à l'accueil"
+
+#: app/templates/500.html:6
+msgid "Internal Server Error"
+msgstr "Erreur interne du serveur"
+
+#: app/templates/500.html:8
+msgid "Something went wrong on our end. Our team has been notified."
+msgstr "Quelque chose s'est mal passé de notre côté. Nos équipes ont été notifiées."
+
+#: app/templates/_post.html:23
+msgid "Translate"
+msgstr "Traduire"
+
+#: app/templates/base.html:48
+msgid "Login"
+msgstr "Connexion"
+
+#: app/templates/base.html:66
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: app/templates/edit_profile.html:12
+msgid "Your public username"
+msgstr "Votre identifiant public"
+
+#: app/templates/edit_profile.html:20
+msgid "Tell us a bit about yourself... (max 140 characters)"
+msgstr "Dites quelques mots sur vous… (140 caractères max)"
+
+#: app/templates/edit_profile.html:27
+msgid "Cancel"
+msgstr "Annuler"
+
+#: app/templates/index.html:8
+msgid "What's new?"
+msgstr "Quoi de neuf ?"
+
+#: app/templates/index.html:12
+msgid "Share something..."
+msgstr "Partagez quelque chose…"
+
+#: app/templates/index.html:18
+msgid "Write your message here (max 140 characters)"
+msgstr "Écrivez votre message ici (140 caractères max)"
+
+#: app/templates/index.html:31
+msgid "All Posts"
+msgstr "Tous les messages"
+
+#: app/templates/index.html:33
+msgid "My Feed"
+msgstr "Mon fil d'actualité"
+
+#: app/templates/index.html:40
+msgid "Nothing here yet. Follow some users or write your first post!"
+msgstr "Rien ici pour l'instant. Suivez des utilisateurs ou publiez votre premier message !"
+
+#: app/templates/index.html:51 app/templates/index.html:53
+#: app/templates/user.html:65 app/templates/user.html:67
+msgid "Newer"
+msgstr "Plus récents"
+
+#: app/templates/index.html:56 app/templates/index.html:58
+#: app/templates/user.html:70 app/templates/user.html:72
+msgid "Older"
+msgstr "Plus anciens"
+
+#: app/templates/login.html:12
+msgid "Your username"
+msgstr "Votre identifiant"
+
+#: app/templates/login.html:20
+msgid "Your password"
+msgstr "Votre mot de passe"
+
+#: app/templates/login.html:33
+msgid "Forgot your password?"
+msgstr "Mot de passe oublié ?"
+
+#: app/templates/login.html:36
+msgid "Don't have an account?"
+msgstr "Pas encore de compte ?"
+
+#: app/templates/login.html:37
+msgid "Create one"
+msgstr "Créer un compte"
+
+#: app/templates/register.html:12
+msgid "Choose a unique username"
+msgstr "Choisissez un identifiant unique"
+
+#: app/templates/register.html:20 app/templates/reset_password_request.html:15
+msgid "your@email.com"
+msgstr "votre@adresse-email.com"
+
+#: app/templates/register.html:28
+msgid "Choose a strong password"
+msgstr "Choisissez un mot de passe sécurisé"
+
+#: app/templates/register.html:36
+msgid "Repeat your password"
+msgstr "Répétez le mot de passe"
+
+#: app/templates/register.html:45
+msgid "Already have an account?"
+msgstr "Déjà inscrit ?"
+
+#: app/templates/register.html:46
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: app/templates/reset_password.html:6
+msgid "Set New Password"
+msgstr "Nouveau mot de passe"
+
+#: app/templates/reset_password.html:8
+msgid "Choose a strong new password for your account."
+msgstr "Choisissez un nouveau mot de passe sécurisé pour votre compte."
+
+#: app/templates/reset_password.html:15
+msgid "Your new password"
+msgstr "Votre nouveau mot de passe"
+
+#: app/templates/reset_password.html:23
+msgid "Confirm your new password"
+msgstr "Confirmez le nouveau mot de passe"
+
+#: app/templates/reset_password_request.html:6
+msgid "Forgot Password?"
+msgstr "Mot de passe oublié ?"
+
+#: app/templates/reset_password_request.html:8
+msgid "Enter your email address and we'll send you a link to reset your password."
+msgstr "Saisissez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe."
+
+#: app/templates/reset_password_request.html:24
+msgid "Back to login"
+msgstr "Retour à la connexion"
+
+#: app/templates/user.html:13
+msgid "Last seen:"
+msgstr "Vu pour la dernière fois :"
+
+#: app/templates/user.html:20
+msgid "followers"
+msgstr "abonnés"
+
+#: app/templates/user.html:24
+msgid "following"
+msgstr "abonnements"
+
+#: app/templates/user.html:35
+msgid "Follow"
+msgstr "Suivre"
+
+#: app/templates/user.html:39
+msgid "Unfollow"
+msgstr "Se désabonner"
+
+#: app/templates/user.html:48
+msgid "Posts"
+msgstr "Publications"
+
+#: app/templates/user.html:56
+msgid "No posts yet."
+msgstr "Aucune publication pour l'instant."

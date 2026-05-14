@@ -1,0 +1,27 @@
+<div class="post-entry">
+  <div class="post-entry-header">
+    <div class="post-author-info">
+      <a href="{{ url_for('user', username=post.author.username) }}">
+        <img src="{{ post.author.avatar(36) }}" class="post-avatar-sm" alt="{{ post.author.username }}">
+      </a>
+      <a href="{{ url_for('user', username=post.author.username) }}" class="post-author-name">
+        {{ post.author.username }}
+      </a>
+    </div>
+    <span class="post-time">{{ moment(post.timestamp).fromNow() }}</span>
+  </div>
+  <p class="post-body-text">
+    <span id="post{{ post.id }}">{{ post.body }}</span>
+  </p>
+  {% if post.language and post.language != g.locale %}
+  <div id="translation{{ post.id }}">
+    <a href="javascript:translate(
+        'post{{ post.id }}',
+        'translation{{ post.id }}',
+        '{{ post.language }}',
+        '{{ g.locale }}')" class="translate-btn">
+      <i class="bi bi-translate me-1"></i>{{ _('Translate') }}
+    </a>
+  </div>
+  {% endif %}
+</div>

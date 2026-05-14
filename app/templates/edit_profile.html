@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-wrapper" style="max-width:520px;">
+  <div class="auth-panel">
+    <h2><i class="bi bi-pencil-square me-2 text-orange"></i>{{ _('Edit Profile') }}</h2>
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        <label class="form-label">{{ form.username.label.text }}</label>
+        {{ form.username(class="form-control",
+           placeholder=_('Your public username')) }}
+        {% for error in form.username.errors %}
+        <div class="text-danger small mt-1">{{ error }}</div>
+        {% endfor %}
+      </div>
+      <div class="mb-4">
+        <label class="form-label">{{ form.about_me.label.text }}</label>
+        {{ form.about_me(class="form-control", rows=4,
+           placeholder=_('Tell us a bit about yourself... (max 140 characters)')) }}
+        {% for error in form.about_me.errors %}
+        <div class="text-danger small mt-1">{{ error }}</div>
+        {% endfor %}
+      </div>
+      {{ form.submit(class="btn btn-primary") }}
+      <a href="{{ url_for('user', username=current_user.username) }}"
+         class="btn btn-outline-secondary ms-2">{{ _('Cancel') }}</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

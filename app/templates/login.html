@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-wrapper">
+  <div class="auth-panel">
+    <h2><i class="bi bi-person-circle me-2 text-orange"></i>{{ _('Sign In') }}</h2>
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        <label class="form-label" for="username">{{ form.username.label.text }}</label>
+        {{ form.username(class="form-control", id="username",
+           placeholder=_('Your username')) }}
+        {% for error in form.username.errors %}
+        <div class="text-danger small mt-1">{{ error }}</div>
+        {% endfor %}
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">{{ form.password.label.text }}</label>
+        {{ form.password(class="form-control", id="password",
+           placeholder=_('Your password')) }}
+        {% for error in form.password.errors %}
+        <div class="text-danger small mt-1">{{ error }}</div>
+        {% endfor %}
+      </div>
+      <div class="mb-3 form-check">
+        {{ form.remember_me(class="form-check-input") }}
+        <label class="form-check-label" for="remember_me">{{ form.remember_me.label.text }}</label>
+      </div>
+      {{ form.submit(class="btn btn-primary w-100") }}
+    </form>
+    <hr class="divider mt-4">
+    <p class="text-center small mb-1">
+      <a href="{{ url_for('reset_password_request') }}">{{ _('Forgot your password?') }}</a>
+    </p>
+    <p class="text-center small mb-0">
+      {{ _("Don't have an account?") }}
+      <a href="{{ url_for('register') }}">{{ _('Create one') }}</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
